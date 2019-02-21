@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .mce-tinymce {
+        width: 50% !important;
+      }
+    </style>
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>
+      tinymce.init({
+        selector:'.editor',
+      });
+    </script>
+  </head>
+  <body>
+    <div class="root">
+      <div class="class-header-to">To : <input type="text"></input></div>
+      <div class="class-header-cc">Cc : <input type="text"></input></div>
+      <div class="editor"></div>
+    </div>
+  </body>
+</html>
