@@ -1,0 +1,22 @@
+<!DOCUTYPE html>
+<html>
+  <head>
+    <script>
+      var testconfirm = function() {
+        confirm('This is dialog from confirm');
+      };
+
+      var testpushstate = function() {
+        window.history.pushState(null, null, window.location.href);
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <button onclick="testconfirm()">Step1. confirm action</button><br><br>
+      <button onclick="testpushstate()">Step 2. pushstate action</button><br><br>
+      <button>Step 3. Tap on Browser Back button</button><br><br>
+      <button onclick="testconfirm()">Step 4. confirm action </button>
+    </div>
+  </body>
+</html>
