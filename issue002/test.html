@@ -1,0 +1,28 @@
+<!DOCUTYPE html>
+<html>
+  <head>
+    <style>
+      .testform {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function Test() {
+        document.getElementById('test1').focus();
+        document.activeElement.blur();
+      }
+
+      function Test2() {
+        document.getElementById('test2').focus();
+        document.activeElement.blur();
+      }
+    </script>
+    <iframe class="testform" id="ifrm" src="ifrmcont.html"></iframe>
+    <button class="testform" id="test" onclick="Test();">Workaround does NOT work</button>
+    <input class="testform" type="button" id="test2" value="workaround works well" onclick="Test2();"></input>
+    <button class="testform" id="dummy1">Dummy Button 1</button>
+    <input class="testform" type="button" id="dummy2" value="Dummy Button 2"></input>
+  </body>
+</html>
